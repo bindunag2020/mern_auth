@@ -3,11 +3,15 @@ const router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
+const User = require("../../models/User");
+const nodemailer = require("nodemailer");
+const async = require("async")
+const crypto = require("crypto")
 // Load input validation
 const validateRegisterInput = require("../../validation/register");
 const validateLoginInput = require("../../validation/login");
 // Load User model
-const User = require("../../models/User");
+//const User = require("../../models/User");
 
 // @route POST api/users/register
 // @desc Register user
