@@ -11,7 +11,7 @@ class Navbar extends Component {
               style={{
                 fontFamily: "sans-serif"
               }}
-              className="col s5 brand-logo center black-text"
+              className="col s5 brand-logo center white-text"
             >
               <i className="material-icons">BOOKERY</i>📖
             </Link>
